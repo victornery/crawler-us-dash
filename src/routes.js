@@ -2,15 +2,24 @@ import Index from "views/Index.jsx";
 import Profile from "views/examples/Profile.jsx";
 import Login from "views/examples/Login.jsx";
 import Partners from "views/examples/Partners.jsx";
+import AddPartner from "views/examples/AddPartner.jsx";
 import Score from "views/examples/Score.jsx";
 import Icons from "views/examples/Icons.jsx";
 
 var routes = [
   {
-    path: "/dash",
+    path: "/index",
     name: "Visão Geral",
     icon: "ni ni-tv-2 text-primary",
     component: Index,
+    layout: "/admin",
+    isOnMenu: 1
+  },
+  {
+    path: "/add-partner",
+    name: "Cadastro de Parceiro",
+    icon: "ni ni-shop text-red",
+    component: AddPartner,
     layout: "/admin",
     isOnMenu: 1
   },
